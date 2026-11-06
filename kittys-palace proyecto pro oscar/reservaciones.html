@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservaciones - Kitty's Palace</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="Logo de Kitty's Palace">
+        Kitty's Palace
+      </a>
+      <nav>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="reservaciones.html" class="active">Reservaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <h1>Reservaciones</h1>
+      <p>Reserva tu mesa en Kitty's Palace</p>
+    </section>
+
+    <section>
+      <div class="contenedor dos-columnas">
+
+        <form action="#" method="get">
+          <h2>Formulario de reservación</h2>
+
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="2222-3333" pattern="[0-9]{4}-[0-9]{4}" title="Escribe el número así: 2222-3333" required>
+
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" required>
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" min="11:00" max="20:00" required>
+
+          <label for="personas">Número de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" max="12" placeholder="2" required>
+
+          <label for="zona">Zona del restaurante:</label>
+          <select id="zona" name="zona" required>
+            <option value="">Selecciona una zona</option>
+            <option value="salon">Salón principal</option>
+            <option value="terraza">Terraza</option>
+            <option value="fotos">Cerca del rincón de fotos</option>
+          </select>
+
+          <label for="comentarios">Comentarios (opcional):</label>
+          <textarea id="comentarios" name="comentarios" placeholder="Cumpleaños, alergias, etc."></textarea>
+
+          <button class="boton" type="submit">Reservar</button>
+        </form>
+
+        <aside>
+          <h3>Horario</h3>
+          <p>Lunes a viernes: 11:00 am - 9:00 pm<br>
+          Sábados: 10:00 am - 10:00 pm<br>
+          Domingos: 10:00 am - 7:00 pm</p>
+          <h3>Importante</h3>
+          <ul>
+            <li>Guardamos tu mesa 15 minutos.</li>
+            <li>Puedes cancelar hasta 2 horas antes.</li>
+            <li>Para grupos de más de 12 personas, <a href="contacto.html">contáctanos</a>.</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Kitty's Palace</strong> ♡ Restaurante</p>
+    <p>Boulevard de los Héroes #77, San Salvador · Tel. <a href="tel:+50322220077">2222-0077</a></p>
+    <p>&copy; 2026 Proyecto escolar - Instituto Nacional de Comercio</p>
+  </footer>
+
+</body>
+</html>
