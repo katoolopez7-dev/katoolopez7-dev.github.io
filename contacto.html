@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Kitty's Palace</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor">
+      <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="Logo de Kitty's Palace">
+        Kitty's Palace
+      </a>
+      <nav>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <h1>Contacto</h1>
+      <p>Escríbenos o visítanos</p>
+    </section>
+
+    <section>
+      <div class="contenedor dos-columnas">
+
+        <form action="#" method="get">
+          <h2>Envíanos un mensaje</h2>
+
+          <label for="c-nombre">Nombre:</label>
+          <input type="text" id="c-nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="c-correo">Correo electrónico:</label>
+          <input type="email" id="c-correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+          <label for="c-asunto">Asunto:</label>
+          <select id="c-asunto" name="asunto" required>
+            <option value="">Selecciona un asunto</option>
+            <option value="consulta">Consulta</option>
+            <option value="evento">Eventos y fiestas</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+
+          <label for="c-mensaje">Mensaje:</label>
+          <textarea id="c-mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" minlength="10" required></textarea>
+
+          <button class="boton" type="submit">Enviar</button>
+        </form>
+
+        <aside>
+          <h3>Dirección</h3>
+          <p>Boulevard de los Héroes #77, Col. Escalón, San Salvador, El Salvador</p>
+          <h3>Teléfono</h3>
+          <p><a href="tel:+50322220077">2222-0077</a></p>
+          <h3>Correo</h3>
+          <p><a href="mailto:hola@kittyspalace.example">hola@kittyspalace.example</a></p>
+          <h3>Redes sociales</h3>
+          <p class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+          </p>
+          <p>@kittyspalace.sv</p>
+        </aside>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+        <h2 class="centrado">¿Dónde estamos?</h2>
+        <iframe title="Mapa de Kitty's Palace" src="https://www.google.com/maps?q=Boulevard+de+los+H%C3%A9roes,+San+Salvador&amp;output=embed" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Kitty's Palace</strong> ♡ Restaurante</p>
+    <p>Boulevard de los Héroes #77, San Salvador · Tel. <a href="tel:+50322220077">2222-0077</a></p>
+    <p>&copy; 2026 Proyecto escolar - Instituto Nacional de Comercio</p>
+  </footer>
+
+</body>
+</html>
