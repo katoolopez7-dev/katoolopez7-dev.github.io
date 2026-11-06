@@ -1,0 +1,538 @@
+/* ===============================
+   Kitty's Palace - estilos.css
+   Proyecto final HTML5 y CSS3
+   =============================== */
+
+/* ---------- Estilos generales ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a3a46;
+  background-color: #fff0f5;
+}
+
+h1, h2, h3 {
+  color: #d63384;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #d63384;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff69b4;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* caja central para que el contenido no quede muy ancho */
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.centrado {
+  text-align: center;
+}
+
+/* ---------- Encabezado y menú ---------- */
+header {
+  background-color: white;
+  border-bottom: 4px solid #ffb6c1;
+  padding: 10px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 8px 14px;
+  color: #5a3a46;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffc0cb;
+  color: #d63384;
+}
+
+/* página en la que estoy */
+nav a.active {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+  display: inline-block;
+  padding: 10px 24px;
+  margin: 5px 5px 5px 0;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #ff69b4;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  background-color: white;
+  color: #ff69b4;
+}
+
+.boton-blanco {
+  background-color: white;
+  color: #ff69b4;
+}
+
+.boton-blanco:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* ---------- Portada ---------- */
+.portada {
+  background-color: #ffc0cb;
+  padding: 40px 0;
+}
+
+.portada .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.portada .texto {
+  flex: 1;
+}
+
+.portada h1 {
+  font-size: 44px;
+  margin-top: 0;
+}
+
+.portada img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 20px;
+}
+
+/* título de las páginas internas */
+.titulo-pagina {
+  background-color: #ffc0cb;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.titulo-pagina h1 {
+  margin: 0 0 5px 0;
+}
+
+.titulo-pagina p {
+  margin: 0;
+}
+
+/* ---------- Secciones ---------- */
+section {
+  padding: 30px 0;
+}
+
+.fondo-blanco {
+  background-color: white;
+}
+
+/* cajitas de 3 columnas */
+.tres-columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.caja {
+  background-color: white;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.caja .emoji {
+  font-size: 40px;
+}
+
+/* ---------- Tarjetas de comida (menú) ---------- */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(214, 51, 132, 0.3);
+}
+
+.tarjeta figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.tarjeta img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+/* la imagen se agranda un poquito */
+.tarjeta:hover img {
+  transform: scale(1.1);
+}
+
+.tarjeta .info {
+  padding: 12px 15px 15px 15px;
+}
+
+.tarjeta h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.tarjeta p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d63384;
+}
+
+/* links para saltar entre categorías del menú */
+.categorias {
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+.categorias a {
+  display: inline-block;
+  margin: 3px;
+  padding: 6px 18px;
+  border: 2px solid #ff69b4;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.categorias a:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.aviso {
+  background-color: white;
+  border: 2px dashed #ff69b4;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 30px 0;
+}
+
+/* ---------- Nosotros ---------- */
+.nosotros {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nosotros .texto {
+  flex: 1;
+}
+
+.nosotros img {
+  width: 400px;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+/* ---------- Galería ---------- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.galeria figure {
+  margin: 0;
+  background-color: white;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.galeria figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(214, 51, 132, 0.3);
+}
+
+.galeria img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.galeria figure:hover img {
+  transform: scale(1.08);
+}
+
+.galeria figcaption {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  position: relative;
+}
+
+/* ---------- Formularios ---------- */
+.dos-columnas {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+form {
+  flex: 2;
+  background-color: white;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  padding: 20px 25px;
+}
+
+aside {
+  flex: 1;
+  background-color: #ffc0cb;
+  border-radius: 12px;
+  padding: 5px 20px 15px 20px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 9px;
+  margin-top: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #5a3a46;
+  border: 2px solid #ffb6c1;
+  border-radius: 8px;
+  background-color: #fffafc;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* cuando hago click en el campo */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #ff1493;
+  box-shadow: 0 0 6px #ff69b4;
+  background-color: white;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+.check label {
+  display: inline;
+  font-weight: normal;
+}
+
+form button {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+/* tarjeta del login */
+.login {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  border: 3px solid #ffb6c1;
+  border-radius: 15px;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.login img {
+  width: 110px;
+}
+
+.login form {
+  text-align: left;
+  border: none;
+  padding: 0;
+}
+
+.login h1 {
+  margin: 5px 0;
+}
+
+/* ---------- Contacto ---------- */
+iframe {
+  width: 100%;
+  height: 350px;
+  border: 4px solid white;
+  border-radius: 12px;
+}
+
+.redes a {
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  padding: 5px 14px;
+  background-color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes a:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+/* ---------- Responsive (tablet y celular) ---------- */
+@media (max-width: 800px) {
+  .portada .contenedor,
+  .nosotros,
+  .dos-columnas {
+    flex-direction: column;
+  }
+
+  .tres-columnas {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portada img,
+  .nosotros img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .dos-columnas form,
+  .dos-columnas aside {
+    width: 100%;
+  }
+
+  header .contenedor {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .portada h1 {
+    font-size: 34px;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
